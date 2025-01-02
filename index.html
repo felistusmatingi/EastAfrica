@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>East African Delights Catering</title>
+    <style>
+        body {
+            font-family: Cursive, Lucida Handwriting;
+            margin: 0;
+            padding: 0;
+            background-color: #ede8f5;
+        }
+
+        header {
+            background-color: #3d52a2;
+            color: rgb(252, 249, 249);
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #adbbda;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        .hero {
+            
+            position: relative;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 2px 2px 4px #000000;
+            font-size: 2rem;
+            overflow: hidden;
+        
+        }
+
+        .hero img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+            /*animation: spin 30s linear infinite*/;  
+        }
+
+      /*  @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        } */
+
+        section {
+            padding: 20px;
+        }
+
+        .dishes {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .dish {
+            flex: 1 1 calc(33.333% - 40px);
+            box-shadow: 0 4px 6px rgba(150, 47, 47, 0.1);
+            border-radius: 5px;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .dish img {
+            width: 100%;
+            height: auto;
+        }
+
+        .dish h3 {
+            margin: 10px 0;
+        }
+
+        footer {
+            background-color: #1E90FF;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .dish {
+                flex: 1 1 calc(50% - 20px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .dish {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>East African Delights </h1>
+        <p>Bringing the taste of East Africa to you. </p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#services">Discover East African</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero">
+        <img src="Grilled Chicken.jpeg" alt="Spinning background">
+        <h2>Authentic East African Cuisine</h2>
+    </div>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>East Africa is a region celebrated for its diverse and vibrant culinary traditions. Its dishes are a harmonious blend of rich spices, varied textures, and bold flavors that tantalize the senses. From the heartwarming stews of Kenya to the aromatic curries of Zanzibar, the hearty plantain dishes of Uganda, and the coastal seafood feasts of Tanzania, every recipe reflects the deep-rooted history, cultural exchange, and communal spirit of the region.
+
+            Food in East Africa is more than sustenance—it’s a way of life. Every meal tells a story: a story of ancient trade routes that brought exotic spices to coastal kitchens, of fertile lands yielding fresh ingredients, and of generations passing down recipes that connect families and communities.
+            
+            Picture yourself enjoying a smoky Nyama Choma from a Kenyan grill, a rich Matoke stew from Uganda, or the fragrant Pilau rice served with freshly caught fish along Tanzania’s stunning coastline. Whether it's a bustling market in Kampala, a beachside café in Dar es Salaam, or a village feast in Arusha, East Africa promises a culinary journey like no other.
+            
+            Let us guide you through this flavorful adventure—one delicious bite at a time.</p>
+    </section>
+
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <div class="dishes">
+            <div class="dish">
+                <img src="Matumbo.jpeg" alt="Matumbo Ugali">
+                <h3>Matumbo Ugali</h3>
+            </div>
+            <div class="dish">
+                <img src="Pork Ribs.jpeg" alt="Pork Ugali">
+                <h3>Pork Ugali</h3>
+            </div>
+            <div class="dish">
+                <img src="Mishkaki.jpeg" alt="Mishkaki">
+                <h3>Mishkaki</h3>
+            </div>
+            <div class="dish">
+                <img src="Crispy Wings.jpeg" alt="Crispy Wings">
+                <h3>Crispy wings</h3>
+            </div>
+            <div class="dish">
+                <img src="Dal.jpeg" alt="Dal">
+                <h3>Dal</h3>
+            </div>
+            <div class="dish">
+                <img src="Plantain.jpeg" alt="Plantain">
+                <h3>Plantain(With beef)</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>Discover East African Cuisine</h2>
+        <p>Dive into the rich flavors of East Africa, where every dish tells a story of culture and history.  <br> <br>
+             <b>Regional Highlights</b> <br> <br>
+            
+            Kenya: Bold flavors in dishes like Ugali and Sukuma Wiki. <br>
+            Tanzania: Coastal influences with coconut curries and Biryani. <br>
+            Uganda: Stews like Groundnut Sauce and the iconic Rolex. <br>
+            Zanzibar: A spice lover’s paradise with dishes featuring cloves, cinnamon, and cardamom.
+            <br>
+            <br>
+            The Role of Spices Signature spices like turmeric, cumin, and cloves define East African cooking, adding warmth and depth to every bite.
+            <br>
+            <br>
+            <br>
+            <b>Must-Try Dishes</b> <br> <br>
+            Nyama Choma (Grilled Meat) <br>
+            Zanzibari Biryani  <br>
+            Chapati and Pilau
+            <br>
+            Experience the vibrant world of East African cuisine—join us for an unforgettable culinary journey</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Ready to savor East African flavors at your next event? Reach out to us:</p>
+        <ul>
+            <li>Email: @gmail.com</li>
+            <li>Phone: +</li>
+            <li>TikTok: tiktok.com/@notyourfinalstop</li>
+            <li>Insta: </li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 East African Delights . All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
